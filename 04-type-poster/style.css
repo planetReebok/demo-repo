@@ -11,22 +11,55 @@
     font-size: 100%;
 }
 
+/* FONTS */
+
+p {
+    font-family: "Work Sans", "Helvetica", sans-serif
+}
+
+.column1 {
+    font-weight: 700;
+    letter-spacing: 0.05rem; 
+}
+
+.symbol {
+    font-family: "Noto Sans Symbols 2";
+}
+
+
+.numeral-small,
+.symbol {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.column3 {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.05rem; 
+}
+
+small {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* GRIDS + WHITE SPACE */
 
 .container {
     margin: 0 auto;
     padding: 6rem 15rem;
     display: grid;
-    grid-template-columns: 6fr 9fr 2fr 2fr 2fr 6fr;
+    grid-template-columns: 6fr 8fr 2fr 2fr 2fr 4fr;
     grid-template-rows: repeat(9, 1fr);
     background: lightgray;
     grid-gap: 0.05rem;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .container div p {
     margin: 0.25rem;
-    background: white;
+    /*    background: white;*/
 }
 
 .column1 {
@@ -42,103 +75,137 @@
 }
 
 .column1:nth-of-type(1) {
-    background: beige;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.column1:nth-of-type(2) {
-    background: green;
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
-
-.column1:nth-of-type(3) {
-    background: beige;
-    grid-row-start: 7;
-    grid-row-end: 9;
-}
-
-.column2 {
-    grid-column: 2;
-}
-
-.column2:nth-of-type(1) {
-    background: beige;
+    /*    background: beige;*/
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-.column2:nth-of-type(2) {
-    background: green;
+.column1:nth-of-type(2) {
+    /*    background: green;*/
     grid-row-start: 4;
     grid-row-end: 7;
-    display: grid;
-    grid-template-columns: 2fr 3.5fr; 
 }
 
-.column2 p {
-    color: orangered; 
-    position: relative; 
-     font-size: 16rem;
-/*    line-height: 12rem; */
-     letter-spacing: -1.25rem; 
-    text-align: right; 
-    font-weight: 700; 
-    padding-right: 1rem; 
-}
-
-
-.column2:nth-of-type(1) p {
-/*    vertical-align: middle; */
-}
-
-
-
-.column2:nth-of-type(2) p {
-    grid-column: 2;
-
-}
-
-.column2 .verticalbar {
-    grid-column: 1; 
-    position: relative; 
-    top:1.5rem;
-    width: 100%; 
-    height: 1rem; 
-    background: black; 
-}
-
-
-.column2:nth-of-type(3) {
-    background: green;
+.column1:nth-of-type(3) {
+    /*    background: beige;*/
     grid-row-start: 7;
     grid-row-end: 10;
 }
 
-
-.column3 {
-    grid-column: 6;
+.column1-a {
+    grid-column: 2 / 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start
 }
 
-.column3:nth-of-type(1) {
-    background: red;
-    grid-row-end: 3;
+.verticalbar {
+    background: black;
+    width: 4rem;
+    height: 1rem;
+    position: relative;
+    top: 1.75rem;
 }
 
-.column3:nth-of-type(2) {
-    background: red;
-    grid-row-start 5;
+.crossbar {
+    background: black;
+    width: 1rem;
+    height: 4rem;
+    position: relative;
+    top: -0.75rem;
+    left: 1.5rem;
+}
+
+.minus {
+    background: black;
+    width: 4rem;
+    height: 1rem;
+    position: relative;
+    left: 0;
+    bottom: -50%;
+
+}
+
+.column2 {
+    grid-column: 2;
+    display: flex;
+    padding-right: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.column2 p {
+    font-weight: 700;
+    font-size: 33.33vh;
+    letter-spacing: -1.25rem;
+}
+
+.alignright p {
+    text-align: right;
+}
+
+.column2.row1 {
+    /*    background: green;*/
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.column2.row2 {
+    /*    background: red;*/
+    grid-row-start: 4;
     grid-row-end: 7;
 }
 
-
-/* FONTS */
-
-p {
-    font-family: "Work Sans", "Helvetica", sans-serif
+.column2.row3 {
+    /*    background: blue;*/
+    grid-row-start: 7;
+    grid-row-end: 10;
 }
 
-.symbol {
-    font-family: "Noto Sans Symbols 2";
+.zero {
+    border: solid;
+    border-width: 1rem;
+    border-radius: 4rem;
+    margin: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+.loop1 {
+    grid-column: 3;
+}
+
+.loop2 {
+    grid-column: 4;
+}
+
+.loop3 {
+    grid-column: 5;
+}
+
+
+.column3 {
+    grid-column: -2;
+    text-align: right;
+}
+
+.column3.row1 {
+    /*    background: red;*/
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.column3.row2 {
+    /*    background: red;*/
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.column3.row3 {
+    /*    background: red;*/
+    grid-row-start: 7;
+    grid-row-end: 10;
 }
