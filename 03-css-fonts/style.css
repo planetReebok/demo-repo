@@ -1,47 +1,58 @@
-@font-face{
-	font-family: 'Occupant Oldstyle';
-	src: url('fonts/OccupantOldstyle-Regular-Trial.woff2') format('woff2');
-	font-weight: 400;
-}
-@font-face{
-	font-family: 'Occupant Oldstyle';
-	src: url('fonts/OccupantOldstyle-Italic-Trial.woff2') format('woff2');
-	font-style: italic;
-	font-weight: 400;
+@font-face {
+    font-family: 'Occupant Oldstyle';
+    src: url('fonts/OccupantOldstyle-Regular-Trial.woff2') format('woff2');
+    font-weight: 400;
 }
 
-@font-face{
-	font-family: 'Occupant Oldstyle VF';
-	src: url('fonts/OccupantOldstyle-VF-Roman-Trial.woff2') format('woff2-variations');
-	font-weight: 200 700;
+@font-face {
+    font-family: 'Occupant Oldstyle';
+    src: url('fonts/OccupantOldstyle-Italic-Trial.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
 }
 
-@font-face{
-	font-family: 'Occupant Oldstyle VF';
-	src: url('fonts/OccupantOldstyle-VF-Italic-Trial.woff2') format('woff2-variations');
-	font-weight: 200 700;
-	font-style: italic;
+@font-face {
+    font-family: 'Occupant Oldstyle VF';
+    src: url('fonts/OccupantOldstyle-VF-Roman-Trial.woff2') format('woff2-variations');
+    font-weight: 200 700;
 }
 
-@font-face{
-	font-family: 'Magmatic VF';
-	src: url('fonts/Magmatic-VF-Trial.woff2') format('woff2-variations');
-	font-stretch: 50% 150%;
-	font-weight: 100 900;
+@font-face {
+    font-family: 'Occupant Oldstyle VF';
+    src: url('fonts/OccupantOldstyle-VF-Italic-Trial.woff2') format('woff2-variations');
+    font-weight: 200 700;
+    font-style: italic;
 }
 
-body{
-
+@font-face {
+    font-family: 'Magmatic VF';
+    src: url('fonts/Magmatic-VF-Trial.woff2') format('woff2-variations');
+    font-stretch: 50% 150%;
+    font-weight: 100 900;
 }
 
-.occ-oldstyle{
-	font-family: 'Occupant Oldstyle';
+body {}
+
+h1 {
+    font-family: "turnip-re", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.occ-oldstyle-vf{
-	font-family: 'Occupant Oldstyle VF';
+p {
+    font-family: 'Occupant Oldstyle VF';
+    color: darkslategrey;
+    font-weight: 330; 
 }
 
-.magmatic-vf{
-	font-family: 'Magmatic VF';
+.occ-oldstyle {
+    font-family: 'Occupant Oldstyle';
+}
+
+.occ-oldstyle-vf {
+    font-family: 'Occupant Oldstyle VF';
+}
+
+.magmatic-vf {
+    font-family: 'Magmatic VF';
 }
