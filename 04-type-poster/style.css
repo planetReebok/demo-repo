@@ -224,4 +224,13 @@ body {
     line-height: 1.75rem;
 }
 
+/* HOVER */
 
+p:hover {
+    color: blue;
+}
+
+.shape:hover {
+    color: darkblue;
+    background: orangered;      
+}
