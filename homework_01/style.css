@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+/* UNIVERSAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* FONTS */
+
+
+
+/* LAYOUT */
+
+.container-grid-posts {
+    display: grid; 
+}
+
+/* HOVER */
+
+
