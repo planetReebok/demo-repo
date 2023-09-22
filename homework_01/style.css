@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
 
 /* UNIVERSAL */
@@ -13,14 +12,29 @@
 
 /* FONTS */
 
-
+* {
+    font-family: "Work Sans";
+}
 
 /* LAYOUT */
 
 .container-grid-posts {
-    display: grid; 
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90vh, 60ch));
+    grid-template-rows: 33vh;
+    /*    background-color: aquamarine;*/
+    grid-gap: 2rem;
+}
+.post {
+    display: block; 
+    padding: 2rem; 
+    margin: 1rem;
+    overflow: auto;
+    scrollbar-width: 3rem;
+    scrollbar-color: black;
+    height: 30ch;
 }
 
 /* HOVER */
-
-
