@@ -27,14 +27,27 @@
     /*    background-color: aquamarine;*/
     grid-gap: 2rem;
 }
+
 .post {
-    display: block; 
-    padding: 2rem; 
+    display: block;
+    padding: 2rem;
     margin: 1rem;
     overflow: auto;
-    scrollbar-width: 3rem;
-    scrollbar-color: black;
     height: 30ch;
 }
 
 /* HOVER */
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(120 75% 50% / 1);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(120 100% 30% / 1);
+}
