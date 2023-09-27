@@ -10,7 +10,7 @@
     font-size: 100%;
 }
 
-/* FONTS */
+/* FONTS & TYPESETTING */
 
 * {
     font-family: "Work Sans";
@@ -20,12 +20,17 @@
     color: #a9a9a9;
 }
 
+.lists li {}
+
 /* LAYOUT */
 
 header {
     width: 90vw;
     margin: 2rem auto;
     font-weight: 600;
+    background-color: #C0C0C0;
+    padding: 1rem 2rem 0.25rem 2rem;
+    color: white;
 }
 
 .container-grid-posts {
@@ -34,35 +39,33 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
     grid-auto-rows: 1fr;
-    /*        background-color: aquamarine;*/
+    /* background-color: aquamarine; */
     grid-gap: 0.5rem;
 }
 
 .post {
-    /*    background-color: coral; */
+    /* background-color: coral; */
     border-style: solid;
     border-color: #a9a9a9;
     border-width: 1px;
     display: block;
     padding: 2rem;
-    /*    margin: 1rem;*/
+    /* margin: 1rem; */
     overflow: auto;
     height: 30ch;
 }
 
 /* VERTICAL SPACE */
 
-p {
+p,
+h1,
+ul,
+hr {
     margin-bottom: 1em;
 }
 
-/* HOVER */
-
-li:hover {
-    color: orangered;
-}
-
 /* SCROLL BAR */
+
 ::-webkit-scrollbar {
     width: 0.75em;
 }
@@ -74,4 +77,19 @@ li:hover {
 
 ::-webkit-scrollbar-thumb {
     background: hsl(0 0% 60% / 1);
+}
+
+/* HOVER */
+
+li:hover {
+    color: orangered;
+    border-color: orangered; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(20 90% 60% / 1);
+}
+
+header:hover {
+    background: linear-gradient(to right, orangered, darkred);
 }
