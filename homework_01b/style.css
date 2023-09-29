@@ -1,0 +1,147 @@
+/* LOAD WEB FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+/* LOAD VARIABLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+/* UNIVERSAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* FONTS & TYPESETTING */
+
+* {
+    font-family: "Work Sans";
+}
+
+.eyebrow {
+    color: #a9a9a9;
+}
+
+.post:has(.capital) {
+    font-size: 33rem;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
+/* LAYOUT */
+
+header {
+    width: 90vw;
+    margin: 2rem auto;
+    font-weight: 600;
+    background-color: #C0C0C0;
+    padding: 1rem 2rem 0.25rem 2rem;
+    color: white;
+}
+
+.container-grid-posts {
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36ch, 1fr));
+    grid-auto-rows: 1fr;
+    /* background-color: aquamarine; */
+    grid-gap: 0.5rem;
+}
+
+.post {
+    /* background-color: coral; */
+    border-style: solid;
+    border-color: #a9a9a9;
+    border-width: 1px;
+    display: block;
+    padding: 2rem;
+    /* margin: 1rem; */
+    overflow: auto;
+    height: 21rem;
+}
+
+li:has(.capital) {
+    display: grid;
+    place-content: center;
+    /*    background-color: aquamarine; */
+}
+
+.capital {
+    margin: 0;
+    padding: 0;
+}
+
+/* VERTICAL SPACE */
+
+p,
+h1,
+ul,
+hr {
+    margin-bottom: 1em;
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0 0% 80% / 1);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 60% / 1);
+}
+
+/* HOVER */
+
+li:hover {
+    color: orangered;
+    border-color: orangered;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(20 90% 60% / 1);
+}
+
+header:hover {
+    background: linear-gradient(to right, orangered, darkred);
+}
+
+/* ANIMATION */
+
+.capital {
+    animation: worksans-axis 30s linear alternate infinite;
+}
+
+@keyframes worksans-axis {
+    0% {
+        font-variation-settings: 'wght'100, 'wdth'150,
+            'XHGT'0;
+    }
+
+    25% {
+        font-variation-settings: 'wght'900, 'wdth'150,
+            'XHGT'0;
+    }
+
+    50% {
+        font-variation-settings: 'wght'900, 'wdth'50,
+            'XHGT'0;
+    }
+
+    75% {
+        font-variation-settings: 'wght'100, 'wdth'50,
+            'XHGT'0;
+    }
+
+    100% {
+        font-variation-settings: 'wght'100, 'wdth'150,
+            'XHGT'0;
+    }
+}
