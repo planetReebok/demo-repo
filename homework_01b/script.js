@@ -1,9 +1,9 @@
-//console.log("Hello");
+console.log("Hello");
 
 
-let trigger = document.getElementById('backgroundTrigger');
+let trigger = document.getElementById('backgroundGrey');
 
 trigger.addEventListener('click', function () {
     console.log("trigger");
-    console.log("background clicked")
+    console.log("background clicked"); 
 })
